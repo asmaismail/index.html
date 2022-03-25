@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitons</title>
+</head>
+<body>
+    <style>
+       ul{
+           display: flex;
+           margin:30px;
+           padding:1px;
+           background-color: brown;
+           color:bisque;
+           list-style:none;
+           align-items: center;
+           transition:all 3s linear ;
+           text-decoration: none;
+           justify-content:center;
+            }
+       ul li{
+           padding:10px;
+           margin:10px;
+           background-color: aqua;
+           list-style:none;
+           display: flex;
+           align-items: center;
+           transition:all 3s linear ;
+           justify-content:center;
+           text-decoration: none;
+           border-radius: 20px;
+           color: darkgreen;
+            }
+       li:hover{
+     background-color: blueviolet; 
+     color: darkgreen;
+    transition:all 3s linear ;
+        }
+
+       </style>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+
+        <div class="top-nav:right"></div>
+        <li style="float:right"><a class="active" href="#about"><button>About</button></a></li>
+
+        <div> <button>Sign in</button><br><br>   
+        <button>Vist more</button></div></div>
+
+    </ul>
+    
+</body>
+</html>
