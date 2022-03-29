@@ -10,6 +10,9 @@
 </head>
 <body>
     <style>
+        body{
+            background-color:lightcyan              ;
+        }
         ul{
             background-color: white;
             display: flex;
@@ -85,9 +88,9 @@
            margin-left: 400px;
        }
        .blacknav{
-           margin-left: 30px;
+           margin-left: 00px;
        }
-       #abc{
+       /*#abc{
            background-color:dimgrey;
            display: flex;
            flex-direction: column;
@@ -98,6 +101,7 @@
            .ABC{
                background-color: grey;
                height: 65vh;
+               width: 30%;
            }
            .img{
             background-image: url('Images/watch-1.jpg');
@@ -110,7 +114,8 @@
                font-size: 150%;
                margin-top: 40px;
                display: flex;
-               flex-direction: column;
+               flex-direction: row;
+               width: 70%;*/
            }
            .circles{
                display: flex;
@@ -118,13 +123,13 @@
            .round> img{
                border-radius: 50%;
                border:solid red;
-              height:10vh;
+               height:10vh;
                width: 65px;
                margin-left: 600px;
-               
-           }
+                 
+           /* }
 
-          .round2 > img{border-radius: 50%;
+              .circles .round2 > img{border-radius: 50%;
                border: solid black;
                height:10vh;
                width: 65px;
@@ -140,7 +145,10 @@
                height:10vh;
                width: 65px;
                margin-left: 30px; 
-               }
+               } */
+               
+            
+
                .btn{
                    height: 100%;
                    width: 900px;
@@ -148,12 +156,16 @@
                    background-color: white;
                    display: flex;
                }
-               button> i{
-                  height: 50px;
-                   width: 100px;
+               .btn> i{
+                  height: 20%;
+                   width: 100%;
+                   justify-content: center;
+                ;
                }
                .btn1{
                 margin-left: 300px;
+                height:50px;
+                padding: 5%;
 
                }
                .btn2{
@@ -165,10 +177,41 @@
                .btn4{
                 margin-left: 30px;
                }
+               /* .shape{
+                   display: flex;
+               }
+               .circle1 > img{
+                   border-radius: 50%;
+                   border:solid red;
+                   height:10vh;
+                   width:65px;
+                   margin-left: 600px;
+               }
+               .circle2 > img{
+                   border-radius: 50%;
+                   border:solid black;
+                   height:10vh;
+                   width:65px;
+                   margin-left: 600px;
+               }
+               .circle3> img{
+                   border-radius: 50%;
+                   border:solid black;
+                   height:10vh;
+                   width:65px;
+                   margin-left: 600px;
+               }
+               .circle4 > img{
+                   border-radius: 50%;
+                   border:solid black;
+                   height:10vh;
+                   width:65px;
+                   margin-left: 600px;
+               }
                .img3{
                    display: flex;
                    background-color: dimgrey;
-               }
+               } */
                .i3{
                    margin-left: 60px;
                }
@@ -176,10 +219,35 @@
                }
                .txt1{
                 position: absolute;
-                bottom: 8px;
+                bottom: 16px;
                 left: 16px;
                 color: black;
 }   
+               }
+               .redborder{ 
+                   display: flex;
+                   width: 50%;
+                
+               }
+               .ss{
+                margin-left:500px;
+               }
+               .red1{
+                   border:3px;
+                border:solid red;
+               }
+               .red2{
+                border:solid red; 
+               }
+               .img3{
+                   display: flex;
+                   border:solid red}
+               .im23 >i{
+                   height:7px;
+                   width:1px;
+               }
+               .im24 >i{
+                   margin-left: 300px;
                }
         </style>
     <ul>
@@ -210,7 +278,36 @@
         <li class="locate"> Track order<i class="fa-solid fa-location-dot"></i></li> 
         <li class="tags">Daily Deals<i class="fa-solid fa-tags"></i></li>
     </ul>
-    <div class="img">
+    <div style="width: 100%; height: 70vh;display: flex;">
+        <div style="width: 20%; height: 70vh;background-color: dimgray">
+            <ul style="background-color: dimgray;">
+                <div>
+            <li><i class="fa-solid fa-shirt"></i>Fashion</li><hr>
+            <li><i class="fa-solid fa-house"></i>Home & Garden</li><hr>
+            <li><i class="fa-solid fa-plug"></i>Electronics</li><hr>
+            <li><i class="fa-solid fa-couch">Furniture</i></li><hr>
+            <li><i class="fa-solid fa-heart-pulse"></i>Health & Beauty</li><hr>
+            <li><i class="fa-solid fa-gamepad-modern"></i>Games & Toys</li><hr>
+            <li><i class="fa-solid fa-pot-food"></i>Cooking & Food</li><hr>
+            <li><i class="fa-solid fa-mobile-screen"></i>Smnart Phones</li><hr>
+            <li><i class="fa-solid fa-camera"></i>Camera</li><hr>
+            <li><i class="fa-solid fa-gem"></i>Accessories</li><hr>
+            <li>View all categories</li></div></ul>
+        </div>
+        <div style="width:80%; height: 70vh;  background-image: url('Images/watch-1.jpg');">
+             <ul style="display: flex; flex-direction: column; width: 40%;margin-top: 20%;background-color: transparent;text; font-size: 25px;" >
+                <li style="color:red; ">FROM ONLINE STORE</li><br>
+                <li style="font-size:medium;color: antiquewhite;"><b>Nike Shoes</b></li><br>
+                <li style="color: antiquewhite;">Recommended</li>
+                <li style="color: antiquewhite;">Free shipping on all orders over $99.00</li>
+                <li><button>Shop now &rarr; </button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <!-- <div class="img">
              <ul id="abc">
                 <div class="ABC">
             <li><i class="fa-solid fa-shirt"></i>Fashion</li><hr>
@@ -224,7 +321,7 @@
             <li><i class="fa-solid fa-camera"></i>Camera</li><hr>
             <li><i class="fa-solid fa-gem"></i>Accessories</li><hr>
             <li>View all categories</li></ul></div>
-              <!-- <div class="text">   
+            <div class="text">   
             <ul class="txt">
                     <li style="color:red">FROM ONLINE STORE</li><br>
                     <li style="font-size:medium;"><b>Nike Shoes</b></li><br>
@@ -232,8 +329,9 @@
                     <li>Free shipping on all orders over $99.00</li>
                     <li><button>Shop now &rarr; </button>
                     </li>
-                </ul></div></div></div> -->
-                <div class="circles">
+                </ul></div></div>-->
+
+                 <!-- <div class="circles"> 
                 <div class="round">
                             <img src="Images/watch-1.jpg"></div>
                 <div class="round2">
@@ -241,22 +339,44 @@
                     <div class="round3">
                         <img src="Images/watch-1.jpg"></div>
                         <div class="round4">
-                            <img src="Images/shoe-1.jpg"></div> </div> 
-                            <div class="btn">
+                            <img src="Images/shoe-1.jpg"></div> </div>  -->
+                       <!-- <div class="shape"> 
+                          <div class="circle1"><img src="Images/watch-1.jpg"></div>
+                          <div class="circle2"><img src="Images/shoe-1.jpg"></div>
+                          <div class="circle3"><img src="Images/watch-1.jpg"></div>
+                          <div class="circle4"><img src="Images/shoe-1.jpg"></div></div>
+             -->
+             <div class="ss" width:30px margin-left="50px">
+                <img src="Images/ss.png">
+            </div>
+            <div class="btn">
                             <button class="btn1"><i class="fa-solid fa-hand-holding-dollar"></i>Money back gaurrantee</button>
                             <button class="btn2"><i class="fa-solid fa-head-side-headphones"></i>Customer Support</button>
                             <button class="btn3"><i class="fa-solid fa-motorcycle"></i>Free shipping & Returns</button>
                             <button class="btn4"><i class="fa-solid fa-credit-card-blank"></i>Secure payment</button>
                      </div>
-                     <div class="img3">
+                     <!-- <div class="img3">
                          <div class="i3"><div class="container"><img src="Images/shop-1.jpg" height="300px" width="400px">
                           <div class="txt1"><b>Fashion's</b><br>starting at <h6 class="money"> 27$</h6> <br>Shop now &rarr; </div></div></div>
                          <img src="Images/shoe-2.jpg" height="300px" width="400px">
-                         <img src="Images/shirt-1.jpg" height="300px" width="400px">
-
-                     </div>
-                        
-                        
+                         <img src="Images/shirt-1.jpg" height="300px" width="400px"> </div>
+                         <p><b>Hot offers for you</b></p>
+                         <div class="redborder">
+                             <div class="red1">
+                                 <img src="Images/shoe-3.jpg" height="300px" width="500px">
+                             </div>
+                             <div class="red2">
+                                 <img src="Images/shoe-4.jpg">
+                             </div>
+                         </div> -->
+                        <div class="img3">
+                            <div class="im23">
+                                <img src="Images/shoe-1.jpg" height="7PX" width="10PX"> </div>
+                                <div class="im24">
+                                    <img src="Images/shoe-1.jpg">
+                                </div>
+                        </div>
+                      
                         
                         
                         
