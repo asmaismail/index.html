@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <style>
+                  .top{background-color: blue; color: white; display: flex; list-style: none; height: 5vh; justify-content: center; text-align: center; }
+  .top> li:nth-child(1){width: 80%; color:white;text-align:left; justify-content: center; } 
+  .top >li >i:hover{color:greenyellow;}
+  .top> li:nth-child(2){width: 40px; color:white;text-align: center; } 
+  .top> li:nth-child(3){width: 40px; color:white;text-align: center; } 
+  .top> li:nth-child(4){width: 40px; color:white;text-align: center; } 
+  .bottom{color:black;display:flex; list-style: none; height: 10vh;}
+  .bottom >li >a{ color: black;text-decoration: none;}
+  .bottom> li:nth-child(1){width: 40%;text-align: left;  } 
+  .bottom> li:nth-child(2){width: 90px;text-align: left; }
+  .bottom> li:nth-child(3){width: 90px;text-align: left; }
+  .bottom> li:nth-child(4){width: 90px;text-align: left; }  
+  .bottom> li:nth-child(5){width: 90px;text-align: left; }
+  .bottom> li:nth-child(6){width: 90px;text-align: left; }
+  .bottom> li:nth-child(7){width: 90px;text-align: left; }
+  .bottom> li:nth-child(8){width: 90px;text-align: left; }
+  .bottom> li:nth-child(9){width: 90px;}
+
+#nav{overflow: hidden;}
+
+          .wrapper{
+        background-image: url('Images/loginpg.jpg');
+        height: 100vh;
+        width:  100%;
+        background-repeat: no-repeat;
+        background-size: cover;}
+        .login{height: 80vh;
+        width: 40%;
+        margin-left: 400px; margin-top: 300px;
+    background-color:lightslategray;
+    color: white;
+   margin-top: 0px;
+   overflow: hidden;
+}
+.login>label{margin-left: 100px;}
+.login>input{margin-left: 200px; height: 40px; width: 200px; border-radius: 10px;}
+.login>a{color: white; margin-left: 100px;}
+
+
+.footer{background-color: rebeccapurple; width: 100%; margin-top:0px; display: flex;}
+   .right{color: white; text-align: center; width: 35%; padding: 10px;}
+   .center{ width: 35%;}
+   .left{ width: 30%;}
+   .right> h3{color:white; text-align: center;}
+   .right> h4{color:white; text-align: center;}   
+   .right> h5{color:white; text-align: center;}
+   .center> h3{color:white; text-align: center;}
+   .center> h4{color:white; text-align: center;}
+   .center> h5{color:white; text-align: center;}
+   .left> h3{color:white; text-align: center; justify-content: center;}
+   .left> h4{color:white; text-align: center; justify-content: center;}
+   .left> h5{color:white; text-align: center; justify-content: center;}
+   .footer >a{background-color: aqua;}
+
+    </style>
+             <div id="nav">
+                <ul class="top">
+                    <li>Are you intrested in Joining the program?Contact me.</li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><i class="fa-brands fa-pinterest"></i></li>               
+                </ul>
+                <ul class="bottom">
+                   <li><img src="Images/eduhash.png"></li>
+                   <li><a href="home.html" target="_blank"> Home</a></li>
+                   <li><a href="about.html"  target="_blank">About us</a></li>
+                   <li><a href="courses.html"  target="_blank">Courses</a></li>
+                   <li><a href="contact.html"  target="_blank">Contact</a></li>
+                   <li><a href="cart.html"  target="_blank">Cart</a></li>
+                   <li><a href="checkout.html"  target="_blank">Checkout</a></li>
+                   <li><a href="regis.html"  target="_blank">Registration</a></li>
+                   <li><a href="login.html" target="_blank">Log in</a></li>
+               </ul> </div>
+        
+
+    <div class="wrapper">
+        <div class="login">
+            <label>Enter Email:</label><br>
+            <input type="email" name="mail" placeholder="Type email"><br><br>
+            <label>Enter Password:</label><br>
+            <input type="password" name="pass" placeholder="Type password"><br><br>
+            <p>Forget Password?</p>
+            <a href="home.html">Back to website</a>
+
+
+        </div></div>
+        <div class="footer">
+            <div class="right">
+               <h3>About us</h3>
+            <span>   <h4><b>Phone:</b></h4><h5>+92***-*******</h5> </span>
+            <span><h4><b>Email:</b></h4><h5>info@yourdomain.com</h5></span>
+            <span><h4><b>Location:</b></h4><h5>123 Fifth Floor East 26th Street, New York, NY 10011</h5></span>
+            <span> <h4><b>Follow us</b></h4><h5><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-linkedin"></i></h5> 
+          </div>
+           <div class="center">
+               <h3>Courses</h3>
+               <h5>SEO Business</h5></span> 
+                <h5>Digital Marketing</h5>
+                <h5>Graphics Designing</h5>
+                <h5>Socail Marketing</h5>
+           </div>
+           <div class="left">
+               <h3>Explore</h3>
+               <h5>About us</h5>
+               <h5>Contact us</h5>
+               <h5>Services</h5>
+               <h5>Support</h5> </div></div><br>
+                <a href="#nav"><i class="fa-solid fa-circle-arrow-up"></i></a>
+
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>EduHash</title>
+</head>
+<body>
+    <style>
+  .top{background-color: blue; color: white; display: flex; list-style: none; height: 5vh; justify-content: center; text-align: center; }
+  .top> li:nth-child(1){width: 80%; color:white;text-align:left; justify-content: center; } 
+  .top >li >i:hover{color:greenyellow;}
+  .top> li:nth-child(2){width: 40px; color:white;text-align: center; } 
+  .top> li:nth-child(3){width: 40px; color:white;text-align: center; } 
+  .top> li:nth-child(4){width: 40px; color:white;text-align: center; } 
+  .bottom{color:black;display:flex; list-style: none; height: 10vh;}
+  .bottom >li >a{ color: black;text-decoration: none;}
+  .bottom> li:nth-child(1){width: 40%;text-align: left;  } 
+  .bottom> li:nth-child(2){width: 90px;text-align: left; }
+  .bottom> li:nth-child(3){width: 90px;text-align: left; }
+  .bottom> li:nth-child(4){width: 90px;text-align: left; }  
+  .bottom> li:nth-child(5){width: 90px;text-align: left; }
+  .bottom> li:nth-child(6){width: 90px;text-align: left; }
+  .bottom> li:nth-child(7){width: 90px;text-align: left; }
+  .bottom> li:nth-child(8){width: 90px;text-align: left; }
+  .bottom> li:nth-child(9){width: 90px;}
+  /* .bottom> li:nth-child(10){width: 90px;} */
+  button{background-color: green; justify-content: center; height: 70px; width: 150px; align-items: center;}
+  button:hover{background-color: blueviolet;}
+  center{color:blue ; font-size: 300%;} 
+    .line1{color:green; font-size:150% ;text-align:center;}
+    .line2{color:blue; text-align: center; font-size:400%;}
+    .line3{text-align: center; font-size:large; margin-top: -30px;}
+    del{color: gray;}
+    .p> img{border-radius: 90px;}
+     .footer{background-color: rebeccapurple; width: 100%; margin-top:0px; display: flex;}
+   .right{color: white; text-align: center; width: 35%; padding: 10px;}
+   .center{ width: 35%;}
+   .left{ width: 30%;}
+   .right> h3{color:white; text-align: center;}
+   .right> h4{color:white; text-align: center;}   
+   .right> h5{color:white; text-align: center;}
+   .center> h3{color:white; text-align: center;}
+   .center> h4{color:white; text-align: center;}
+   .center> h5{color:white; text-align: center;}
+   .left> h3{color:white; text-align: center; justify-content: center;}
+   .left> h4{color:white; text-align: center; justify-content: center;}
+   .left> h5{color:white; text-align: center; justify-content: center;}
+   .footer >a{background-color: aqua;}
+    .icon{margin-top:50px;color: darkred;}
+    /* .img{width: 100%; background-color: aqua; overflow: hidden; display: flex;} */
+    /* @media screen AND(max-width:196px)
+    {
+        .img{display: flex; flex-direction: column; overflow: hidden;}
+        .img>.img1{display: flex; flex-direction: column;}
+        .img>.img2{display: flex; flex-direction: column;}
+
+    } */
+    /* .img >.img1{width: 40%; background-color: brown;}
+    .img >.img2{width: 40%; background-color: blueviolet;}
+    .img>.img1{border-radius: 10%; border:dashed gray; width: 25%; height: 30vh;}
+    .img>.img2{border-radius: 10%; border:dashed gray; width: 25%; height: 30vh;}
+    .img >.img1>img{border-radius: 50%; width: 35%; } */
+    /* .slider{
+        background-color: red;
+            height: 70%;
+            width: 70%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            margin-top: 150px;
+            position: absolute;
+
+    }
+    @keyframes slider {
+            0% {
+                background-image: url('Images/laptop-1.jpg');
+            }
+
+            25% {
+                background-image: url('Images/laptop-2.jpg');
+            }
+
+            50% {
+                background-image: url('Images/laptop-3.webp');
+            }
+
+            75% {
+                background-image: url('Images/laptop-4.jpg');
+            }
+
+            /* 100% {
+                background-image: url('Images/slider-7.jpg');
+            } */
+
+        /* } */ 
+        .black>img{ width: 100%; background-color: blue;}
+        .subs{width: 100%; display: flex; height: 30vh; background-color: lightgrey;}
+        .subs1{width: 60%;}
+        .subs1>.line2{margin-top: 6px; font-size:50px;}
+        .subs2{width: 40%;}
+        .subs2>input{height: 7vh; width: 90%; margin-top: 40px; border-radius: 10px;}
+        .subs2>button{ width: 30%; height: 8vh;}
+             #nav{width: 100%; overflow: hidden;}
+             .blog{width: 100%; display: flex; background-color: lightslategray;}
+             .blog1>img{width: 70%; height: 200px;}
+             .blog2>img{width: 70%; height: 200px;}
+             .blog3>img{width: 70%; height: 200px;}
+                 .blog1>p{margin-top: 30px;}
+                 .blog2>p{margin-top: 30px;}
+                 .blog3>p{margin-top: 30px;}
+             .blog1{width: 33%; }
+             .blog2{width: 33%;}
+              .blog3{width:33%;} 
+
+
+    </style>
+      <div id="nav">
+                 <ul class="top">
+                     <li>Are you intrested in Joining the program?Contact me.</li>
+                     <li><i class="fa-brands fa-twitter"></i></li>
+                     <li><i class="fa-brands fa-linkedin-in"></i></li>
+                     <li><i class="fa-brands fa-pinterest"></i></li>               
+                 </ul>
+                 <ul class="bottom">
+                    <li><img src="Images/eduhash.png"></li>
+                    <li><a href="home.html" target="_blank"> Home</a></li>
+                    <li><a href="about.html"  target="_blank">About us</a></li>
+                    <li><a href="courses.html"  target="_blank">Courses</a></li>
+                    <li><a href="contact.html"  target="_blank">Contact</a></li>
+                    <li><a href="cart.html"  target="_blank">Cart</a></li>
+                    <li><a href="checkout.html"  target="_blank">Checkout</a></li>
+                    <li><a href="regis.html"  target="_blank">Registration</a></li>
+                    <li><a href="login.html" target="_blank">Log in</a></li>
+                </ul> 
+                <hr><br><br>
+                <p class="line1">Expert instructions</p>
+                <p class="line2"><b>Its time to apmlify your <br>Online Career</b></p><br>
+                <p class="line3">Eduhash is a HTML5 template based on Sass and Bootstrap 4 with modern and creative <br>multipurpose design you 
+                can use it as a startups.</p>
+                  <center><a href="eduCourses1.html"><button>Our Courses</button></a></center>
+                  <p class="line1">Trending Courses</p>
+                  <p class="line2">Popular online courses around you</p>
+                  <p class="line3">The ultimate planning solution for busy women who want to reach<br> their personal goals</p>
+                  <p class="line1">NewsLetter</p>
+
+                   <div class="subs">
+                       <div class="subs1">
+                         <p class="line2">Subscribe to get the<br> latest news</p>
+                       </div>
+                       <div class="subs2">
+                         <input type="email" name="mail" placeholder="Enter your email"><button>Subscribe here</button>
+                       </div>
+                   </div>
+                  <!-- <div class="img">
+                      <div class="img1">
+                           <img src="Images/laptop-1.jpg">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, est?
+                      </div><br><br>
+                      <div class="img1">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, fugiat.
+                      </div></div><br>
+                      <div class="pic">
+                      <div class="img2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aliquam.
+
+                      </div><br>
+                      <div class="img2">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sequi.
+                      </div><br>
+                  </div>  -->
+                     <p class="line1">Be an Instructor</p>
+                     <p class="line2">Want to be an Instructor?</p>
+                     <p class="line3">Join millions of people from around the world learning together. Online learning <br>is as easy and 
+                        natural as chatting.<br><br><button>Become Instructor</button></p><br><br><br><br><br>
+                        <p class="line1">Blog News</p>
+                        <p class="line2">Latest from the blog</p>
+                        <p class="line3">The ultimate planning solution for busy women who want to reach<br> their personal goals</p>
+                        <div class="blog">
+                            <div class="blog1">
+                               <img src="Images/blog1.PNG">
+                               <p class="line3">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                   . Quidem nesciunt aliquam sint esse nisi vitae quam! Magnam nostrum sapiente officiis!</p>
+                            </div>
+                            <div class="blog2">
+                                <img src="Images/blog2.PNG">
+                                <p class="line3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                     Minus eum soluta odit totam necessitatibus assumenda voluptates earum dolor maxime officiis!</p>
+                            </div>
+                            <div class="blog3">
+                                <img src="Images/blog3.PNG">
+                                <p class="line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Mollitia ratione repudiandae officia labore accusantium quae quam blanditiis adipisci non quis.</p>
+                            </div>
+                        </div>
+                        <div class="black"><img src="Images/page1.PNG"></div>
+                    
+                    <div class="footer">
+                        <div class="right">
+                           <h3>About us</h3>
+                        <span>   <h4><b>Phone:</b></h4><h5>+92***-*******</h5> </span>
+                        <span><h4><b>Email:</b></h4><h5>info@yourdomain.com</h5></span>
+                        <span><h4><b>Location:</b></h4><h5>123 Fifth Floor East 26th Street, New York, NY 10011</h5></span>
+                        <span> <h4><b>Follow us</b></h4><h5><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i>
+                           <i class="fa-brands fa-linkedin"></i></h5> 
+                      </div>
+                       <div class="center">
+                           <h3>Courses</h3>
+                           <h5>SEO Business</h5></span> 
+                            <h5>Digital Marketing</h5>
+                            <h5>Graphics Designing</h5>
+                            <h5>Socail Marketing</h5>
+                       </div>
+                       <div class="left">
+                           <h3>Explore</h3>
+                           <h5>About us</h5>
+                           <h5>Contact us</h5>
+                           <h5>Services</h5>
+                           <h5>Support</h5> </div></div>
+                          <div class="icon">  <a href="#nav"><i class="fa-solid fa-circle-arrow-up"></i></a></div>
+                    
+    
+
+
+
+ 
+      </div>
+</body>
+</html>
