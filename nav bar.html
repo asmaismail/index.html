@@ -46,37 +46,35 @@
              border: 3px;
              border-radius: 10px;
  }
- #silder{
-     overflow: hidden;
- }
- #slider figure{
-     position: relative;
-     width: 500%;
-     animation:3s slider infinite;
-     height: 60%;
 
- }
- #slider figure images{
-     width: 70%;
- }
- @keyframe slider {
-    0%{
-        left:0;}
-        20%{
-            left:0%
-        }
-    25%{
-        left:-100%;
-    } 
-    45%{
-        left:-100%
-    }
- }
  footer{
      background-color: coral;
      text-align: center;
      padding:5px;
  }
+ .slider {
+     margin-top: 60px;
+            height: 70%;
+            width: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('Images/download(3).jpg');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: slider 3s infinite linear;
+        }
+
+        @keyframes slider {
+            0% {
+                background-image: url('Images/download (1).jpg');
+            }
+
+            50% {
+                background-image: url('Images/download.jpg');
+            }
+        }
 
     </style>
     <ul>
@@ -89,14 +87,11 @@
         <div class="search">
             <input type="text"name="search" id="serach"placeholder="search here">
         </div>
-    </ul>
-    <div id="slider">
-        <figure>
-            <img src="Images/image3.jpg">
-            <img src="Images/image1.jpeg">
-             </figure>
-</div>
-<h2>ABOUT US</h2>
+    </ul><br><br><br><br>
+    <div class="slider">
+        
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>ABOUT US</h2>
 <p>Established in 2005, National Vocational and Technical Training Commission (NAVTTC) is the apex body for technical education and vocational
      training in the country mandated to provide for regulations, coordination, and policy direction for vocational and technical training and
       is thus involved in the policy making, strategy formulation, regulation, and revamping of the country’s entire Technical & Vocational 
