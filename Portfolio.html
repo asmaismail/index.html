@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .wrapper {
+        width: 100%;
+        background-color: black;
+    }
+
+    nav {
+        width: 100%;
+        background-color: black;
+    }
+
+    nav:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    nav .logo {
+        float: left;
+        color: white;
+    }
+
+    nav ul li a i {
+        width: 30px;
+        padding: 10px;
+    }
+
+    nav ul {
+        float: left;
+        list-style: none;
+        margin-right: 40px;
+        position: relative;
+    }
+
+    nav ul li {
+        float: left;
+        display: inline-block;
+        background-color: #1b1b1b;
+        margin: 0 5px;
+    }
+
+    nav ul li:hover>ul {
+        top: 70px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        line-height: 70px;
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    nav ul li a:hover {
+        border-radius: 5px;
+        color: cyan;
+        box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+    }
+
+    nav ul ul {
+        position: absolute;
+        top: 90px;
+        border-top: 3px solid cyan;
+        opacity: 0;
+        visibility: hidden;
+        transition: 3s;
+    }
+
+    nav ul ul li a {
+        line-height: 50px;
+    }
+
+    nav ul ul li a:hover {
+        color: cyan;
+        box-shadow: none;
+    }
+
+    nav ul ul li {
+        position: relative;
+        margin: 0px;
+        width: 150px;
+        float: none;
+        display: list-item;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul ul ul li {
+        position: relative;
+        top: -70px;
+        left: 150px;
+    }
+
+    nav ul ul ul {
+        border-top: none;
+    }
+
+    .div1>img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .div2 {
+        display: flex;
+    }
+
+    .div1>h4 {
+        margin-top: -50vh;
+    }
+
+    .div2>.diva {
+        width: 50%;
+        background-color: black;
+        margin-top: 10em;
+    }
+    .div2 h2, p ,h1{
+        width: 70%;
+    }
+
+    .div2>.divb {
+        width: 50%;
+        text-align: right;
+        align-items: right;
+    }
+
+    .divb>img {
+        width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h5,
+    p {
+        color: white;
+    }
+    .icon {
+        color: white;
+        font-size: 25px;
+        padding: -10px;
+    }
+
+    @media only screen and (max-width:968px) {
+        .nav {
+            margin-left: 0px;
+            float: left;
+        }
+
+        nav .logo {
+            padding-left: 30px;
+            width: 100%;
+        }
+
+        nav ul li,
+        nav ul ul li {
+            display: block;
+            width: 100%;
+        }
+
+        nav ul ul {
+            top: 70px;
+            position: static;
+            border-top: none;
+            float: none;
+            display: none;
+        }
+    }
+
+    h4 {
+        color: green;
+    }
+
+    .col-3 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+     .col-3 h2{
+           color:black;
+     }
+    .col-3>h4 {
+        text-align: center;
+        width: 80%;
+        color: white;
+    }
+
+    .cola {
+        width: 33%;
+    }
+
+    .cola>img {
+        width: 80%;
+    }
+
+    .colb {
+        width: 33%;
+    }
+
+    .colb>img {
+        width: 80%;
+    }
+
+    .colc {
+        width: 33%;
+    }
+
+    .colc>img {
+        width: 80%;
+    }
+
+    .about {
+        width: 100%;
+        display: flex;
+    }
+
+    .about>.abouta {
+        width: 60%;
+    }
+
+    .about>.abouta img {
+        width: 70%;
+    }
+
+    .about>.aboutb {
+        width: 60%;
+    }
+
+    .about>h2 {
+        text-align: center;
+    }
+
+    .about h2 i {
+        font-size: 200px;
+        text-align: right;
+    }
+
+    .about h2 i:hover {
+        padding: 90px;
+    }
+      .form-group label{
+        color:red; font-size: 20px;
+      }
+       .form-group input{
+           border-radius: 5px solid white;
+      } 
+    .about p {
+        text-align: center;
+    }
+    .footer{
+        background-color: #1b1b1b;
+        width: 100%;
+        height: 10vh;
+
+    }
+    .footer p{text-align: center;
+    margin-left: 10em;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-boxes" viewBox="0 0 16 16">
+                            <path
+                                d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                        </svg>AVG
+                    </div>
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Services<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+
+                            <li><a href="#">UI/UX</a></li>
+                            <li><a href="#">Web </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+
+                            <li><a href="#">FAQS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Gird Layout</a></li>
+                            <li><a href="#">Single post</a>
+                                <!-- <ul>
+                        <li><a href="#">Single post1</a></li>
+                    </ul>  -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Skills<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Graphics</a></li>
+                            <li><a href="#">Vedio Editing</a></li>
+                        </ul>
+                    <li><a href="#">Web<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Designing</a></li>
+                            <li><a href="#">Development</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cyber Security</a></li>
+                    </li>
+                    <li><a href="#"><i class=" icon fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"> <i class="icon fa-brands fa-facebook-f"></i></a></li>
+
+                    + <li><a href="#"><i class="icon fa-brands fa-twitter"></i></li></a></li>
+                </ul>
+            </nav>
+            <div class="div1">
+                <img src="Images/portfolio-2.PNG">
+                <!--<div class="img1">  <img src="Images/portfolio-1.jpg"> </div>  -->
+                <!--Closed img1-->
+            </div> <!-- Closed div1 -->
+            <div class="div2">
+                <div class="diva">
+                    <h2>About me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fugiat similique at velit rem totam
+                        ad incidunt hic maiores
+                        debitis.</p>
+                    <h1>My mission is design develop the best Web sites around you.</h1>
+                    <p>Hello! I’m Alex Smith. Web designer from USA, California, San Francisco. I have rich experience
+                        in web site design and
+                        building, also I am good at wordpress. I love to talk with you about our unique. </p>
+                </div>
+                <div class="divb">
+                    <img src="Images/portfolio-3.PNG">
+                </div>
+            </div> <br><br><br>
+            <!--Closed div2-->
+            <h2 style="text-align:center">Blog</h2><br><br>
+            <div class="col-3">
+                <h2 style="text-align:center">Blog</h2>
+                <div class="cola">
+                    <img src="Images/portfolio-6.PNG">
+                    <h3>Our blog-1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, quidem?</p>
+
+                </div>
+                <!--closed div cola-->
+                <div class="colb">
+                    <img src="Images/portfolio-5.PNG">
+                    <h3>Our blog-2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, quidem?</p>
+
+
+
+                </div>
+                <!--colb-->
+                <div class="colc">
+                    <img src="Images/portfolio-4.PNG">
+                    <h3>Our blog-3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, quidem?</p>
+
+
+                </div>
+                <!--colc-->
+            </div>
+            <!--col-3-->
+            <hr>
+            <br><br><br>
+            <div class="about">
+                <div class="abouta"> <img src="Images/portfolio-7.PNG"></div>
+                <!--abouta-->
+                <div class="aboutb">
+                    <center>
+                        <h2>About me</h2>
+                    </center><br><br><br>
+                    <h2>
+                        <center><i class="fa-solid fa-message"></i>
+                            <h3 style="margin-top:-130px; color: #1b1b1b;">Hi!! there</h3>
+                    </h2>
+                    </center>
+                    <br><br><br><br><br>
+                    <p>In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut
+                        vel diam. Nullam tempus,
+                        nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo. Nulla in
+                        feugiat elit.</p>
+                        <div class="form-group">
+                            <label for="staticEmail" class="col-sm-2  col-md-3 col-lg-6 col-form-label">Name</label><br><br>
+                            <h3>Jonathan Doe</h3>
+                            <label for="staticEmail" class="col-sm-2  col-md-3 col-lg-6 col-form-label">Email</label><br><br>
+                            <h3>hello@example.com</h3>
+
+                            <label for="staticEmail" class="col-sm-2  col-md-3 col-lg-6 col-form-label">Contact</label><br><br>
+                            <h3>+1 908-736-1801</h3>
+                        </div>             <!--form grp-->
+                        <button type="button" class="btn btn-danger">Download CV &darr;</button>
+                        <button type="button" class="btn btn-danger">Contact me</button><br><br>
+                        <button type="button"class="col-sm-2  col-md-3 col-lg-4 btn btn-danger">Hire me</button><br><br>
+
+                </div>
+                <!---aboutb-->
+            </div><br><br>
+            <!--About div closed-->
+            <div class="footer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quibusdam dolores blanditiis consequuntur qui fuga amet aliquam iusto consequatur, reprehenderit libero distinctio recusandae a. Veniam nisi voluptatibus explicabo? Saepe, incidunt.</p>
+            </div>
+            </div>
+        <!--Wrapper closed-->
+    </div>
+    <!--closed fluid-container--> <body></html>
