@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rosybrown;
+        }
+        ul{
+            background-color: darkslateblue;
+            color: black;   
+            display: flex;
+            margin: 50PX;
+            padding:10PX;
+            border-radius: 12px;
+            align-items: center;
+            text-decoration: none;
+            
+        }
+        li{
+            background-color:hotpink ;
+            color:black;
+            display: flex;
+            float: left;
+            padding:10px;
+            margin:10px;
+            justify-content: center;
+            align-items: center;
+            border:12px;
+            border-color: black;
+            border-style: solid;
+            border-width: 3px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+         
+         .search{
+             
+             color: aliceblue;
+             margin-left: 300px;
+             border: 3px;
+             border-radius: 10px;
+ }
+
+ footer{
+     background-color: coral;
+     text-align: center;
+     padding:5px;
+ }
+ .slider {
+     margin-top: 60px;
+            height: 70%;
+            width: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('Images/download(3).jpg');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: slider 3s infinite linear;
+        }
+
+        @keyframes slider {
+            0% {
+                background-image: url('Images/download (1).jpg');
+            }
+
+            50% {
+                background-image: url('Images/download.jpg');
+            }
+        }
+
+    </style>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="news.html">News & Events</a></li>
+        <li><a href="depar.html">Departments</a></li>
+        <li><a href="resou.html">Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <div class="search">
+            <input type="text"name="search" id="serach"placeholder="search here">
+        </div>
+    </ul><br><br><br><br>
+    <div class="slider">
+        
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>ABOUT US</h2>
+<p>Established in 2005, National Vocational and Technical Training Commission (NAVTTC) is the apex body for technical education and vocational
+     training in the country mandated to provide for regulations, coordination, and policy direction for vocational and technical training and
+      is thus involved in the policy making, strategy formulation, regulation, and revamping of the country’s entire Technical & Vocational 
+      Education and Training (TVET) system. NAVTTC is an autonomous public sector body created through the NAVTTC Act-2011 that is presently
+       working under the Ministry of Federal Education and Professional Training. NAVTTC was established as an attached entity of the Prime 
+       Minister’s Secretariat (Public) to promote and regulate technical and vocational training in the country. It facilitates, regulates, and
+        provides policy direction for skill development in Pakistan.</p>
+
+
+<footer>
+     <p>For more detail contact us at:03**-*******</p>
+     <p>YOU can also vist us at info@navttac.org</p>
+</footer>
+</body>
+</html>
