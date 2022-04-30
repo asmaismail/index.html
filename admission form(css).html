@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <title>Admission</title>
+</head>
+<body>
+<style>
+.container{width: 100%;}
+h3,h5{color: #198754;}
+.input{width: 100%; display: flex;}
+.input .input1{width: 33%; float: right;}
+.input .input2{width: 33%; float: right;}
+.input .input3{width: 33%;  float: right;}
+.input select,input{width: 90%;}
+.input button{width: 90%;}
+</style>
+<div class="container">
+    <div class="text-center">
+        <img src="Images/nav.jpg" class="rounded" alt="no image"><br>
+        <h3><i class="fa-solid fa-globe"></i> Accreditation Application Apply Online Form</h3>
+      </div>
+    <h5><i class="fa-solid fa-address-book"></i> Contact Details</h5>
+    <div class="input">
+        <div class="input1">
+            <label>Province/Region:</label>
+            <select>
+                <option>Select Province</option>
+                <option>ICT</option>
+                <option>Punjab</option>
+                <option>Sindh</option>
+                <option>KPK</option>
+                <option>Bolchistan</option>
+            </select><br><br>
+            <label>Phone #:</label>
+            <input type="number" placeholder="03_ _-_ _ _ _ _ _"><br><br>
+            <label>Institute type:</label>
+            <select>
+                <option>Select Type</option>
+                <option>GCI</option>
+                <option>GPI</option>
+                <option>GTTI</option>
+                <option>GMI</option>
+                <option>Private</option>
+                <option>GTMS</option>
+                <option>GTTC</option>
+                <option>TTC</option>
+                <option>VTI</option>
+            </select><br><br>
+        </div>
+        <div class="input2">
+            <label>Name of Institute:</label>
+            <input type="text" name="ins" placeholder="Institute name"><br><br>
+            <label>Email:</label>
+            <input type="email" placeholder=" type email"><br><br>
+            <label>Institute Nature:</label>
+<select>
+    <option>Select Nature</option>
+    <option>Boys</option>
+    <option>Girls</option>
+    <option>Co-Eduaction</option>
+</select><br><br>
+ </div>
+        <div class="input3">
+<label>City:</label><br>
+<select>
+    <option>Select City</option>
+    <option>Banu</option>
+    <option>Sawat</option>
+    <option>Mardan</option>
+    <option>Faisalabad</option>
+    <option>Lahore</option>
+    <option>Karachi</option>
+    <option>Islamabad</option>
+    <option>Multan</option>
+    <option>Sargodah</option>
+</select><br><br>
+<label>Date of Establishment:</label>
+<input type="text" placeholder="type date"><br><br>
+<label>Institute Category:</label>
+<select>
+    <option>Select Category</option>
+    <option>GOVT-KPK-TEVTTA</option>
+    <option>NGO</option>
+    <option>Private</option>
+    <option>Fauji Foundation</option>
+    <option>GOVT-AJK-TEVTTA</option>
+    <option>Social Welafre</option>
+</select><br><br>
+</div>
+    </div>
+    <label>Postal Address:</label><br>
+    <input style="width:95%" type="text" placeholder="type address"><br><br>
+    <h5><i class="fa-solid fa-graduation-cap"></i> Registration Details</h5>
+    <div class="input">
+        <div class="input1">
+            <label>Registration Authorithy:</label>
+            <input type="text"><br><br>
+            <label>Registartion no:</label>
+            <input type="text">
+        </div>
+        <div class="input2">
+            <label>Date of Registartion:</label>
+            <input type="date">
+        </div>
+        <div class="input3">
+            <label>Registartion for Year(s):</label>
+            <input type="text">
+        </div>
+    </div><br><br>
+    <h5><i class="fa-solid fa-certificate"></i> Details of Affiliation with Examining /Certification Body</h5>
+    <div class="input">
+        <div class="input1">
+            <label>Name of Affliting body:</label>
+            <input type="text">
+        </div>
+        <div class="input2">
+            <label>Date of Affliation:</label>
+            <input type="date">
+        </div>
+        <div class="input3">
+            <label>Period for which awarded:</label>
+            <input type="text">
+            <br><br>
+            <button class="btn btn-success justify-center" type="button">+ Add more programs</button></div>
+</div><br><br>
+<hr>
+<table class="table-registrerd-programs">
+    <thead>
+        <tr>
+            <th width="45%">Name of Trade/Program</th>
+            <th width="15%">Duration</th>
+            <th width="20%">Offered Since</th>
+            <th width="10%">Approved Capacity</th>
+            <th width="10%">Batches Graduated</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                <td>
+                    <select required name="Trades_DAE[]" id="Trades_DAE" class="form-select">
+                        <option value>Select</option>
+                        <option value="1">Wood Work</option>
+                        <option value="2">LTV</option>
+                        <option value="3">HTV</option>
+                        <option value="4">Hair style & Beauty</option>
+                        <option value="5">Beauty</option>
+                        <option value="6">Cooking</option>
+                        <option value="7">Fashion</option>
+                        <option value="8">Plumbing</option>
+                        <option value="9">Computer Operator</option>
+                        <option value="10">Hand Embriodroy</option>
+                        <option value="11">Leather Work</option>
+                        <option value="12">CNC</option>
+                        <option value="13">Drafting</option>
+                        <option value="14">RAC-I</option>
+                        <option value="15">Chinese Langauge</option></select>
+                </td>
+                <td><input type="text" name="trades_DAE_duration[]" value="" id="trades_DAE_duration" class="form-control" required="required">
+                </td>
+                <td>
+                    <select name="trades_DAE_since[]" id="trades_DAE_since" class="form-select" required="required">
+                        <option value="">select</option>
+                                                                  <option value="1950">1950</option>
+                                                                      <option value="1951">1951</option>
+                                                                      <option value="1952">1952</option>
+                                                                      <option value="1953">1953</option>
+                                                                      <option value="1954">1954</option>
+                                                                      <option value="1955">1955</option>
+                                                                      <option value="1956">1956</option>
+                                                                      <option value="1957">1957</option>
+                                                                      <option value="1958">1958</option>
+                                                                      <option value="1959">1959</option>
+                                                                      <option value="1960">1960</option>
+                                                                      <option value="1961">1961</option>
+                                                                      <option value="1962">1962</option>
+                                                                      <option value="1963">1963</option>
+                                                                      <option value="1964">1964</option>
+                                                                      <option value="1965">1965</option>
+                                                                      <option value="1966">1966</option>
+                                                                      <option value="1967">1967</option>
+                                                                      <option value="1968">1968</option>
+                                                                      <option value="1969">1969</option>
+                                                                      <option value="1970">1970</option>
+                                                                      <option value="1971">1971</option>
+                                                                      <option value="1972">1972</option>
+                                                                      <option value="1973">1973</option>
+                                                                      <option value="1974">1974</option>
+                                                                      <option value="1975">1975</option>
+                                                                      <option value="1976">1976</option>
+                                                                      <option value="1977">1977</option>
+                                                                      <option value="1978">1978</option>
+                                                                      <option value="1979">1979</option>
+                                                                      <option value="1980">1980</option>
+                                                                      <option value="1981">1981</option>
+                                                                      <option value="1982">1982</option>
+                                                                      <option value="1983">1983</option>
+                                                                      <option value="1984">1984</option>
+                                                                      <option value="1985">1985</option>
+                                                                      <option value="1986">1986</option>
+                                                                      <option value="1987">1987</option>
+                                                                      <option value="1988">1988</option>
+                                                                      <option value="1989">1989</option>
+                                                                      <option value="1990">1990</option>
+                                                                      <option value="1991">1991</option>
+                                                                      <option value="1992">1992</option>
+                                                                      <option value="1993">1993</option>
+                                                                      <option value="1994">1994</option>
+                                                                      <option value="1995">1995</option>
+                                                                      <option value="1996">1996</option>
+                                                                      <option value="1997">1997</option>
+                                                                      <option value="1998">1998</option>
+                                                                      <option value="1999">1999</option>
+                                                                      <option value="2000">2000</option>
+                                                                      <option value="2001">2001</option>
+                                                                      <option value="2002">2002</option>
+                                                                      <option value="2003">2003</option>
+                                                                      <option value="2004">2004</option>
+                                                                      <option value="2005">2005</option>
+                                                                      <option value="2006">2006</option>
+                                                                      <option value="2007">2007</option>
+                                                                      <option value="2008">2008</option>
+                                                                      <option value="2009">2009</option>
+                                                                      <option value="2010">2010</option>
+                                                                      <option value="2011">2011</option>
+                                                                      <option value="2012">2012</option>
+                                                                      <option value="2013">2013</option>
+                                                                      <option value="2014">2014</option>
+                                                                      <option value="2015">2015</option>
+                                                                      <option value="2016">2016</option>
+                                                                      <option value="2017">2017</option>
+                                                                      <option value="2018">2018</option>
+                                                                      <option value="2019">2019</option>
+                                                                      <option value="2020">2020</option>
+                                                                      <option value="2021">2021</option>
+                                                                      <option value="2022" selected="selected">2022</option>
+                                                               </select>
+                </td>
+                <td>
+                    <input type="text" name="trades_DAE_capacity[]" value="" id="trades_DAE_capacity" class="form-control" required="required">
+                </td>
+                <td>
+                    <input type="text" name="trades_DAE_batch_graduated[]" value="" id="trades_DAE_batch_graduated" class="form-control" required="required">
+                </td>
+            </tr>
+        </tbody>
+</table><hr>
+<br>
+<h5><i class="fa-solid fa-certificate"></i>  Details of Previous Accreditation (If Any)</h5>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Statments</th>
+            <th>Yes</th>
+            <th>No</th>
+            <th>Date of Accreditation</th>
+            <th>Duartion of Accreditation</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                <td><label class="form-check-label" for="previous_accredit_yes_no">
+                    The institute was previously institutionaly accredited.
+               </label></td>
+               <td><div class="iradio_flat-green" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" 
+               id="previous_accredit_yes_no" name="previous_accredit_yes_no" class="previous-yes-no form-check-input" value="1" 
+               style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%;
+                display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255);
+                 border: 0px; opacity: 0;"></ins></div></td>
+                 <td><div class="iradio_flat-green checked" aria-checked="false" aria-disabled="false" style="position: relative;">
+                 <input type="radio" name="previous_accredit_yes_no" class="previous-yes-no form-check-input" value="0" checked="checked" 
+                 style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block;
+                  width: 100%; height: 100%; margin: 0px; padding: 0px; 
+                 background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div></td>
+                 <td><input type="text" name="previous_accredit_date" value="" id="previous_accredit_date" class="form-control add-datepicker" 
+                    readonly="readonly" 
+                    style="background-color: rgb(255, 255, 255);"></td>
+                    <td>
+                        <input type="text" name="previous_accredit_duration" value="" id="previous_accredit_duration" class="form-control">
+                    </td>
+            </tr>
+        </tbody>
+    </thead>
+</table>
+
+
+
+<button class="btn btn-success justify-center" type="button">Submitt</button>
+
+
+    
+    
+    </div>       <!--container-->
+</body>
+</html>
