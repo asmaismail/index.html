@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="conatiner bg-dark ">
+        <div class="row p-3 ">
+            <div class="col-md-10 ">
+                <input type="text" placeholder="Enter Text" class="form-control" id="todoinput">
+
+            </div>
+            <div class="col-md-2">
+                <button id="todobtn" class="btn  btn-success m-1">Add</button>
+            
+            </div>
+        </div>
+        <div class="row p-3">
+            <ul id="todounorder" class="text-white">
+            </ul>
+        </div>
+    </div>
+    <script>
+        let todobtn = document.getElementById('todobtn');
+        let todoinput = document.getElementById('todoinput');
+        let ul = document.getElementById('todounorder');
+        todobtn.addEventListener('click', function () {
+            let li = document.createElement('li');
+            li.setAttribute('class', 'list-unstyled d-flex justify-content-between w-50 m-1');
+            let input = document.createElement('input');
+            input.setAttribute('type', 'text');
+            input.setAttribute('value', todoinput.value);
+            input.setAttribute('class', 'form-control');
+            input.setAttribute('readonly', 'readonly');
+            let edit = document.createElement('button');
+            edit.innerHTML = 'Edit';
+            edit.setAttribute('class', 'btn btn-success ms-2');
+            let del = document.createElement('button');
+            del.innerHTML = 'DELETE';
+            del.setAttribute('class', 'btn btn-danger ms-2');
+            li.appendChild(input);
+            li.appendChild(edit);
+            li.appendChild(del);
+            ul.appendChild(li);
+            todoinput.value = '';
+            console.log(input);
+            edit.addEventListener('click', function () {
+                if (edit.innerHTML == 'Edit') {
+                    input.removeAttribute('readonly', 'readonly');
+                    edit.innerHTML = 'Save';
+                } else {
+                    input.setAttribute('readonly', 'readonly');
+                    edit.innerHTML = 'Edit';
+                }
+                console.log(input);
+            })
+            del.addEventListener('click', function () {
+                let veri = confirm('Are You Sure');
+                if (veri) {
+                    ul.removeChild(li);
+                    alert("Thanks For DEL");
+                } else {
+                    alert("OPPS");
+                }
+            })
+            // console.log(li);
+        })
+        console.log(todobtn);
+        console.log(todoinput);
+        console.log(ul);
+    </script>
+</body>
+
+</html>
+
