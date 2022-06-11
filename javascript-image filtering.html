@@ -1,0 +1,99 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .unorder {
+            width: 100%;
+            height: 35px;
+            padding: 10px;
+            /* background-color: gray; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .unorder>li {
+            /* background-color: blue; */
+            /* color: black; */
+            list-style: none;
+            padding: 10px 10px;
+            margin-right: 10px;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .unorder>li:hover {
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: brown;
+            color: white;
+
+        }
+
+        .action {
+            display: none;
+        }
+    </style>
+    <ul class="unorder">
+        <li class="item" data-item="all">ALL</li>
+        <li class="item" data-item="mobile">Mobile</li>
+        <li class="item" data-item="shoes">Shoes</li>
+        <li class="item" data-item="bag">Bag</li>
+        <li class="item" data-item="laptop">Laptop</li>
+    </ul>
+    <div class="continer">
+        <div class="imgDiv" data-filter="laptop">
+            <img src="Images/laptop-4.jpg" width="100%" alt="">
+        </div>
+        <div class="imgDiv" data-filter="bag">
+            <img src="Images/laptop-3.jpg" width="100%" alt="">
+        </div>
+        <div class="imgDiv" data-filter="shoes">
+            <img src="Images/watch-4.jpg" width="100%" alt="">
+        </div>
+        <div class="imgDiv" data-filter="mobile">
+            <img src="Images/mobile-4.jpg" width="100%" alt="">
+        </div>
+    </div>
+    <script>
+        let item = document.getElementsByClassName('item');
+        for (let a = 0; item.length > a; a++) {
+            item[a].addEventListener('click', function () {
+                for (let k = 0; item.length > k; k++) {
+                    item[k].classList.remove('active');
+                }
+                item[a].classList.add("active");
+                // ;
+                let filitem = item[a].getAttribute('data-item');
+                console.log(filitem);
+                let img = document.getElementsByClassName('imgDiv');
+                for (let y = 0; img.length > y; y++) {
+
+                    let filter = img[y].getAttribute('data-filter');
+                    img[y].classList.add('action');
+
+                    console.log(img[y]);
+                    if (filitem == filter) {
+                        img[y].classList.remove('action');
+                        console.log(img[y]);
+
+                    } else if (filitem == 'all') {
+                        img[y].classList.remove('action');
+                        // alert("all");
+
+                    }

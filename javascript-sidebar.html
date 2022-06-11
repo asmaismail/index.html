@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Side Bar</title>
+</head>
+<body>
+    <style>
+       .container{background-color:lightgreen}
+       .ul{background-color: gray;height: 80vh;}
+       .ul li{list-style: none;}
+    </style>
+    <div class="container">
+        <br><br>
+        <div class="row h-100">
+            <div class="col-md-3">
+                <ul class="ul">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                      </svg></li>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Servics</li>
+                    <li>Vist Us</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <button id="btn" class="btn btn-warning" onclick="openNav()">X</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+  <script>
+      function openNav() {
+  document.getElementsByClassName("ul").style.width = "250px";
+  document.getElementById("btn").style.marginLeft = "250px";
+}
+
+
+
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .Header{height: 90vh;}
+        .nav ul{display: flex; justify-content: space-between;}
+        .nav ul li{list-style: none;}
+    </style>
+    <div class="container">
+        <br><br>
+        <div class="row Header">
+            <div class="nav">
+            <button id="btnOpen">😁</button>
+            <ul>
+             <li>Nav item 1</li>
+             <li>Nav item 2</li>
+             <li>Nav item 3</li>
+             <li>Nav item 4</li>
+             <li>Nav item 5</li>
+            </ul>
+            </div>
+            <div class="col-md-2 bg-dark p-2" id="sidebar">
+                <div class="butt d-flex justify-content-end">
+                    <button class="btn btn-primary float-right" id="btn">X</button>
+                </div>
+                <div class="item text-white">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 h-100 bg-warning"></div>
+
+        </div>
+    </div>
+
+    <script>
+        let btn=document.getElementById("btn");
+        let btnOpen=document.getElementById("btnOpen");
+        btnOpen.style.display="none";
+        let sidebar=document.getElementById("sidebar");
+        btn.addEventListener('click',function(){
+            sidebar.style.display="none";
+            btnOpen.style.display="block";
+        })
+        btnOpen.addEventListener('click',function(){
+            sidebar.style.display="block";
+            btnOpen.style.display="none";
+        })
+        console.log(btn);
+
+    </script>
+</body>
+</html>
+
