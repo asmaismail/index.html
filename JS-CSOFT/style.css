@@ -32,16 +32,16 @@
 
 } 
 
-.btn {
-    background-color: #22275e;
-    color: #FFFFFF
+/* .btn {
+    background-color:white;
+    color: black;
 }
 
 
 .btn:hover {
     background-color: #007BFF;
     color: #FFFFFF;
-}
+} */
 
 .navv {
     display: flex;
@@ -423,3 +423,179 @@ text-justify: inter-word;
     background-attachment: fixed;}
     .heading, .paragraph{ text-align: center; justify-content: center; color:black;}
 
+/*multi slider*/
+.multi-slider1 {
+    display: grid;
+    place-items: center;
+}
+
+.slider1 {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide1-track {
+    display: flex;
+    width: calc(250px* 18);
+}
+
+.slide1 {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    animation: scroll 5s infinite;
+}
+
+.rotating {
+    width: 100%;
+    transition: transform 1%;
+}
+
+.slider1::before,
+.slider1::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0), 100%);
+    content: '';
+    height: 100%;
+    position: absolute;       
+    width: 15%;
+    z-index: 2;
+}
+
+.slider1::before {
+    left: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px*9));
+    }
+}
+/*counter up*/
+.counter {
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    margin-top: 10%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .up {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color:white;
+    border: 2px solid blue;
+  }
+   .star {
+    color: orange;
+    font-size: 2em;
+    text-align: center!important;
+    justify-content: center!important;
+    align-items: center!important;
+  } 
+  span.num {
+    color:black;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+  }
+  span.text {
+    color:black;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    .counter {
+      width: 85vw;
+    }
+    .up {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .counter {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .up {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .counter {
+      gap: 15px;
+      margin-top: 10%;
+    }
+    .up {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+      margin-top: 10%;
+    }
+  }
+  /*cart buuton*/
+  .cart-button{
+    position: relative; padding: 10px;width: 200px;height: 60px; border: 0;border-radius: 10px;background-color: #fff;outline: none;
+    cursor: pointer;color:#fff;transition: .3s ease-in-out;overflow: hidden;
+  }
+  .cart-button:hover{
+    background-color: #fff;
+  }
+  .cart-button:active{
+    transform: scale(.9);
+  }
+  .cart-button .fa-shopping-cart{
+    position: absolute;z-index: 2;top: 50%;left: -10%;font-size: 2em;transform: translate(-50%, 50%);
+  }
+  .cart-button .fa-box{
+    position: absolute;z-index: 3;top: -20%;left: 52%;font-size: 1.2em;transform: translate(-50%, -50%);
+  }
+  .cart-button span{
+    position: absolute;z-index: 3;left: 50%;font-size: 1.2em;transform: translate(-50%, -50%);color:#000;top: 50%;
+  }
+  .cart-button span.add-to-cart{opacity: 1;}
+  .cart-button span.added{opacity: 0;}
+  .cart-button.clicked .fa-shopping-cart{animation: cart 1.5s ease-in-out forwards;}
+  .cart-button.clicked .fa-box{animation: box 1.5s ease-in-out forwards;}
+  .cart-button.clicked span.add-to-cart{animation: txt1 1.5s ease-in-out forwards;}
+  .cart-button.clicked span.added{animation: txt2 1.5s ease-in-out forwards;}
+  @keyframes cart{
+    0%{left:-10%;}
+    40%, 60%{left: 50%;}
+    100%{left: 110%;}
+  }
+  @keyframes{
+    0%, 40%{top:-20%;}
+    60%{top:40%; left:52%;}
+
+  }

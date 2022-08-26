@@ -1,71 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="aos-master/dist/aos.css">
-    <link rel="icon" href="Images/csoft-logo.PNG" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>CSOFT-CONTACT</title>
-</head>
+<?php
+include_once 'navbar.php';
+?>
 <body>
-    <header>
-        <section>
-            <nav class="navbar navbar-expand-lg" style="background-color:#0F1341">
-                <div class="container">
-                  <a class="navbar-brand" href="https://csoftsystems.com/index.php" style="color:#FFFFFF" >Open hours 9:00AM - 9:00PM</a>
-                    <span class="navbar-text">
-                        <a href="https://csoftsystems.com/index.php"> <i class="fa-brands fa-facebook-f" style="color:#FFFFFF"></i></a> 
-                        <a href="https://csoftsystems.com/index.php"><i class="fa-brands fa-instagram" style="color:#FFFFFF"></i> </a>
-                        <a href="https://csoftsystems.com/index.php"><i class="fa-brands fa-twitter" style="color:#FFFFFF"></i></a>
-                        <a href="https://csoftsystems.com/index.php"><i class="fa-brands fa-linkedin-in" style="color:#FFFFFF"></i></a>
-                        <a href="https://csoftsystems.com/index.php"> <i class="fa-brands fa-pinterest" style="color:#FFFFFF"></i></a> 
-                        <a href="https://csoftsystems.com/index.php"> <i class="fa-brands fa-snapchat" style="color:#FFFFFF"></i></a> 
-
-                    </span>
-              </nav>
-              <nav class="navbar navbar-expand-lg bg-light h-7">
-                <div class="container">
-                  <a class="navbar-brand" href="https://csoftsystems.com/index.php"><img src="Images/csoft footer-1.png" height="80vh"></a>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" style="background-color:white ; color:blue" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                          </svg><br>+92 314 5000083<br>info@csoftsystems.com
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa- fa-street-view" style="font-size: 7vh"></i><br>Faisalabad-38000<br>Punjab,
-                          Pakistan</a>
-                    </ul>
-                      <button class="btn" type="submit">REQUEST A QUOTE</button>
-                  </div>
-                </div>
-              </nav>
-              <nav class="navv sticky-top">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-10">
-                  <ul>
-                  <li><a class="navbar-brand mt-2" href="index.html">Home</a></li>
-                  <li><a class="navbar-brand" href="csoft-contact us.html">Contact</a></li>
-                  <li><a class="navbar-brand" href="csoft-about us.html">About</a></li>
-                  <li><a class="navbar-brand" href="csoft-blog.html">Blog</a></li>
-                  <li><a class="navbar-brand" href="csoft-patners.html">Patners</a></li>
-                  <li><a class="navbar-brand" href="Csoft-faq.html">FAQ</a></li></div>
-                  <div class="col-md-2">
-                  <button class="btn btn-outline-primary mt-1"type="submit">LOG IN/ SIGN IN</button></div>
-                  </ul>
-                </div>
-                </div>
-              </nav>
-        </section>
-    </header>
+   
     <main>
     <!--location-->
     <div class="container">
