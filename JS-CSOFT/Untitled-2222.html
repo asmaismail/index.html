@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count Up Animation</title>
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+  </head>
+  <style>
+    /* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;*/
+  .blurr{
+    background-image: url('Images/about-featured\ services.PNG');
+    opacity: 2%;
+  }
+
+.counter {
+  position: absolute;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.up {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background-color:white;
+  border: 2px solid blue;
+}
+ .star {
+  color: orange;
+  font-size: 2em;
+  text-align: center!important;
+  justify-content: center!important;
+  align-items: center!important;
+} 
+span.num {
+  color:black;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+span.text {
+  color:black;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+@media screen and (max-width: 1024px) {
+  .counter {
+    width: 85vw;
+  }
+  .up {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .counter {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .up {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .counter {
+    gap: 15px;
+  }
+  .up {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+}
+    </style>
+  <body>
+    <div class="counter">
+      <div class="up">
+        <!-- <i class="fas fa-utensils"></i> -->
+        <span class="num" data-val="1000">000</span>
+        <span class="text">Team Members</span>
+        <span><i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i></span>
+      </div>
+
+      <div class="up">
+        <!-- <i class="fas fa-smile-beam"></i> -->
+        <span class="num" data-val="340">000</span>
+        <span class="text">Satisfied Customers</span>
+        <span><i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i></span>
+      </div>
+
+      <div class="up">
+        <!-- <i class="fas fa-list"></i> -->
+        <span class="num" data-val="12">000</span>
+        <span class="text">Successfull Years</span>
+        <span><i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i></span>
+      </div>
+
+      <div class="up">
+        <span class="num" data-val="1500">+</span>
+        <span class="text">Successfull Projects</span>
+       <span><i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i></span>
+
+
+
+      </div>
+    </div>
+    <!-- Script -->
+    <script>
+        let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+    </script>
+  </body>
+</html>

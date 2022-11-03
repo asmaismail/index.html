@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+</head>
+<body>
+    <form>
+        <label for="chkemployment">Man</label>
+        <input type="checkbox" id="chkemployment" onChange="toggleVisibility('imgemployment');" /><br />
+
+        <label for="chke">Bag</label>
+        <input type="checkbox" id="chke" onChange="toggleVisibility('img');" /><br />
+
+
+        <label for="chkpopulation">Woman</label>
+        <input type="checkbox" id="chkpopulation" onChange="toggleVisibility('imgpopulation');" />
+        <hr/>
+        <img id="imgemployment" src="img/about -img.jpg"
+            style="display: inline-block;height: 300px;width: 300px; visibility:hidden" />
+        <img id="img" src="img/hero-2.PNG"
+            style="display: inline-block;height: 300px;width: 300px; visibility:hidden" />
+        <img id="imgpopulation" src="img/home-3.PNG"
+            style="display:inline-block;height: 300px;width: 300px; visibility:hidden" />
+    </form>
+   
+    <script>
+        function toggleVisibility(id) {
+            var el = document.getElementById(id);
+
+            if (el.style.visibility == "visible") {
+                el.style.visibility = "hidden";
+            }
+            else {
+                el.style.visibility = "visible";
+            }
+        }
+    </script>
+</body>
+
+</html>
+Footer
